@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+    <title>IEEE PES Joint Event</title>
+    <link rel="stylesheet" href="style_E1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            background-color: white;
+            color: #310055;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 100;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#About" onclick="hideMenu()">ABOUT</a></li>
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="#Contact" onclick="hideMenu()">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!--Slide Show-->
+        <div class="slideshow-container">
+            <h1>IEEE PES Day 2021 (Jordan And Lebanon Joint Event) <br></h1>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 1</div>
+                <img src="pes.png" style="width:100%">
+                <div class="text">"Clean Energy Debate" poster, which was held on the third day of the event</div>
+            </div>
+
+            <!--<div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="null.png" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="null.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>-->
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <!--<span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>-->
+        </div>
+        </div>
+        <div class="row">
+            <div class="E-col">
+
+                <p>Under the patronage of IEEE Jordan section ,a three-day event organized by IEEE PES University of Jordan,
+                    Yarmouk University, PSUT student Chapters, BAU IEEE PES/IAS Joint chapter and WIE Jordan Affinity
+                    groups in collaboration with the IEEE Lebanon section was hold with the theme of the PES day
+                    worldwide celebration "Clean Energy Revolution" virtually through zoom. <br>It included many diverse
+                    segments and was planned with the help of our affinity group. Joining forces with other universities
+                    was rather epic and such an honor!</p>
+            </div>
+
+
+
+            <div class="Set-col">
+                <h3>Date</h3>
+                <p> 09-23-28 April 2021 </p>
+                <h3>Time</h3>
+                <p>04:00 PM - 08:30 PM (UTC +03:00)</p>
+                <h3>Place</h3>
+                <p>Hybrid:<br>Al-Hijjawi Faculty for Engineering Technology && ONLINE</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--Contact-->
+    <section class="Contact" id="Contact">
+        <h1>Contact Us From Anywhere</h1>
+        <a href="https://www.facebook.com/IEEEYUWIEAG?mibextid=ZbWKwL" class="btn1">Facebook</a>
+        <a href="https://instagram.com/ieee_yu_wie?igshid=MzRlODBiNWFlZA==" class="btn1">Instagram</a>
+        <a href="mailto:ieee.wie.yu@gmail.com" class="btn1">Email</a>
+    </section>
+
+    <!--Footer-->
+    <section class="Footer">
+        <p>Copyright <i class="fa fa-copyright"></i> 2023 Women In Engineering Affinty Group-Yarmouk University - All Rights Reserved</p>
+        <p><i class="fa fa-facebook"></i> <i class="fa fa-instagram"></i> <i class="fa fa-envelope"></i></p>
+    </section>
+
+    <!--toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--Scroll to Top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!--Slide Show-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

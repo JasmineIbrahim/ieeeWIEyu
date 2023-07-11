@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style_News.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+
+    <style>
+        .disabled {
+            pointer-events: none;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: #310055;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination a.active {
+            background: #310055;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #bd68ee79;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="" index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#About" onclick="hideMenu()">ABOUT</a></li>
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="#Contact" onclick="hideMenu()">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Our News</h1>
+            <p>Communication is key! Staying in touch with our members and anyone interested in our family is a
+                priority! In addition to our social media presence linked below in our contacts, you can always stay up
+                to date with us by looking at our news. Keep track of all we do and our latest announcements to make
+                sure you never mess out on an opportunity!</p>
+            <a href="#Announcements" class="btn">Explore News & Announcements</a>
+        </div>
+
+    </section>
+
+    <section class="Announcements" id="Announcements">
+        <h1>Announcements</h1>
+        <div class="row-A">
+            <div class="Ann-col">
+                <h3>Website Launch!</h3>
+                <p>We finally launched our own website!!</p>
+            </div>
+            <div class="Ann-col">
+                <h3>Website Launch!</h3>
+                <p>We finally launched our own website!!</p>
+            </div>
+            <div class="Ann-col">
+                <h3>Website Launch!</h3>
+                <p>We finally launched our own website!!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--News-->
+    <section class="News" id="News">
+
+        <h1>News</h1>
+        <div class="row-A">
+            <div class="Null-col">
+                <p>Nothing to see here yet!! Check back later.</p>
+            </div>
+            <!--<div class="News-col">
+                <img src="null.png">
+                <h3>News 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia nostrum adipisci tempore
+                    voluptatem
+                    officia tenetur dignissimos officiis, veritatis ab illum odio, eos repellendus numquam voluptate aut
+                    inventore! Quam, ut.</p>
+                <a href="N3.html" class="btn-news">Learn More</a>
+            </div>
+            <div class="News-col">
+                <img src="null.png">
+                <h3>News 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia nostrum adipisci tempore
+                    voluptatem
+                    officia tenetur dignissimos officiis, veritatis ab illum odio, eos repellendus numquam voluptate aut
+                    inventore! Quam, ut.</p>
+                <a href="N2.html" class="btn-news">Learn More</a>
+            </div>
+            <div class="News-col">
+                <img src="null.png">
+                <h3>News 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia nostrum adipisci tempore
+                    voluptatem
+                    officia tenetur dignissimos officiis, veritatis ab illum odio, eos repellendus numquam voluptate aut
+                    inventore! Quam, ut.</p>
+                <a href="N1.html" class="btn-news">Learn More</a>
+            </div>-->
+            <!-- <div class="row2">
+            <div class="News-col">
+                <img src="null.png">
+                <h3>News 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia nostrum adipisci tempore
+                    voluptatem
+                    officia tenetur dignissimos officiis, veritatis ab illum odio, eos repellendus numquam voluptate
+                    aut
+                    inventore! Quam, ut.</p>
+                <a href="N6.html" class="btn-news">Learn More</a>
+            </div>
+            <div class="News-col">
+                <img src="null.png">
+                <h3>News 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia nostrum adipisci tempore
+                    voluptatem
+                    officia tenetur dignissimos officiis, veritatis ab illum odio, eos repellendus numquam voluptate
+                    aut
+                    inventore! Quam, ut.</p>
+                <a href="N5.html" class="btn-news">Learn More</a>
+            </div>
+            <div class="News-col">
+                <img src="null.png">
+                <h3>News 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia nostrum adipisci tempore
+                    voluptatem
+                    officia tenetur dignissimos officiis, veritatis ab illum odio, eos repellendus numquam voluptate
+                    aut
+                    inventore! Quam, ut.</p>
+                <a href="N4.html" class="btn-news">Learn More</a>
+            </div>
+        </div>-->
+    </section>
+    <!--Pagination
+    <div class="center">
+        <div class="pagination">
+            <a href="#" class="disabled">&laquo;</a>
+            <a href="News.html" class="active">1</a>
+            <a href="News2.html">2</a>
+            <a href="News3.html">3</a>
+            <a href="News2.html">&raquo;</a>
+        </div>
+    </div>
+-->
+
+    <!--Contact-->
+    <section class="Contact" id="Contact">
+        <h1>Contact Us From Anywhere</h1>
+        <a href="https://www.facebook.com/IEEEYUWIEAG?mibextid=ZbWKwL" class="btn1">Facebook</a>
+        <a href="https://instagram.com/ieee_yu_wie?igshid=MzRlODBiNWFlZA==" class="btn1">Instagram</a>
+        <a href="mailto:ieee.wie.yu@gmail.com" class="btn1">Email</a>
+    </section>
+
+    <!--Footer-->
+    <section class="Footer">
+        <p>Copyright <i class="fa fa-copyright"></i> 2023 Women In Engineering Affinty Group-Yarmouk University -
+            All
+            Rights Reserved</p>
+        <p><i class="fa fa-facebook"></i> <i class="fa fa-instagram"></i> <i class="fa fa-envelope"></i></p>
+    </section>
+
+    <!--toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--Scroll to Top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

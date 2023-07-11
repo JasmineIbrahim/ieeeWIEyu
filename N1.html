@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+    <title>WIE-YU</title>
+    <link rel="stylesheet" href="N1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        figure {
+            padding: 4px;
+            margin: auto;
+        }
+
+        figcaption {
+            color: #3200555d;
+            font-style: italic;
+            padding: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#About" onclick="hideMenu()">ABOUT</a></li>
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="#Contact" onclick="hideMenu()">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="rowH">
+            <h1>Headline Headline Headline Headline</h1>
+            <p>Date and Time</p>
+        </div>
+
+        <div class="row">
+            <div class="N-col">
+                <p>In this example, the image will float to the left in the paragraph, and the text in the paragraph
+                    will wrap around the image. <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices
+                    nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+                    facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit
+                    risus congue. Nunc
+                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                    sed
+                    ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.<br>
+                    Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Culpa autem inventore repudiandae aliquam itaque nobis
+                    numquam necessitatibus fuga nam est cupiditate beatae praesentium, tempore dolores, quibusdam
+                    aperiam eius! Eum, perferendis? Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Culpa autem inventore repudiandae aliquam itaque nobis
+                    numquam necessitatibus fuga nam est cupiditate beatae praesentium, tempore dolores, quibusdam
+                    aperiam eius! Eum, perferendis?Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.<br>
+                    Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Culpa autem inventore repudiandae aliquam itaque nobis
+                    numquam necessitatibus fuga nam est cupiditate beatae praesentium, tempore dolores, quibusdam
+                    aperiam eius! Eum, perferendis? Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Culpa autem inventore repudiandae aliquam itaque nobis
+                    numquam necessitatibus fuga nam est cupiditate beatae praesentium, tempore dolores, quibusdam
+                    aperiam eius! Eum, perferendis?</p>
+            </div>
+            <div class="P-col">
+                <figure>
+                    <img src="null.png" alt="Pineapple" style="width:100%">
+                    <figcaption>caption text</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Contact-->
+    <section class="Contact" id="Contact">
+        <h1>Contact Us From Anywhere</h1>
+        <a href="https://www.facebook.com/IEEEYUWIEAG?mibextid=ZbWKwL" class="btn1">Facebook</a>
+        <a href="https://instagram.com/ieee_yu_wie?igshid=MzRlODBiNWFlZA==" class="btn1">Instagram</a>
+        <a href="mailto:ieee.wie.yu@gmail.com" class="btn1">Email</a>
+    </section>
+
+    <!--Footer-->
+    <section class="Footer">
+        <p>Copyright <i class="fa fa-copyright"></i> 2023 Women In Engineering Affinty Group-Yarmouk University - All Rights Reserved</p>
+        <p><i class="fa fa-facebook"></i> <i class="fa fa-instagram"></i> <i class="fa fa-envelope"></i></p>
+    </section>
+
+    <!--toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--Scroll to Top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
