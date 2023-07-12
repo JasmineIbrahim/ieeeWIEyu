@@ -208,7 +208,7 @@ h3 {
 }
 
 .About-col {
-    flex-basis: 25%;
+    flex-basis: 10%;
     background: #edccfd;
     border-radius: 10px;
     margin-bottom: 5%;
