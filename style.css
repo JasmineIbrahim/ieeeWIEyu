@@ -203,16 +203,16 @@ h3 {
 .row {
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row-reverse;
 }
 
 .About-col {
-    flex-basis: 10%;
+    flex-basis: 31%;
     background: #edccfd;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 15px 12px;
+    padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
